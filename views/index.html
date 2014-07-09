@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File Server</title>
+</head>
+
+<body>
+	<b>Category</b>
+	<select id="category">
+		<option value="all">all</option>
+	</select>
+
+	<form action="/upload" method="post" enctype="multipart/form-data">
+		<input type="file" name="uploadfile" />
+		<input type="hidden" name="directory" value="foo"/>
+		<input type="submit" value="upload"/>
+	</form>
+</body>
+</html>
+
